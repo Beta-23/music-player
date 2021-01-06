@@ -8,12 +8,17 @@ let isPlaying = false;
 
 // Play Btn
 function playSong() {
-    isPlaying = true
+    isPlaying = true;
     music.play();
 }
 
 // Pause Btn
 function pauseSong() {
-    isPlaying = false
+    isPlaying = false;
     music.pause();
 }
+
+// Play or Pause event listener
+playButton.addEventListener('click', () => (
+    isPlaying ? pauseSong() : playSong()));
+
