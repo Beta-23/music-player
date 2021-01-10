@@ -63,10 +63,23 @@ function loadSong(song) {
 // Current Song
 let songIndex = 0;
 
+// Previous Song
+function prevSong() {
+    songIndex--;
+    if (songIndex < 0) {
+        songIndex = songs.length - 1;
+    }
+    loadSong(songs[songIndex]);
+    playSong();
+}
+
 // Next Song
 function nextSong() {
     songIndex++;
-    console.log(songIndex)
+    if (songIndex > songs.length -1) {
+        songIndex = 0;
+    }
+    
     loadSong(songs[songIndex]);
     playSong();
 }
@@ -75,7 +88,7 @@ function nextSong() {
 loadSong(songs[songIndex]);
 
 // Event Listeners
-
+prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 
 
