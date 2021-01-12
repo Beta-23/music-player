@@ -101,8 +101,10 @@ function updateProgressBar(e) {
         // Calculate display for duration
         const durationMinutes = Math.floor(duration / 60);
         let durationSeconds = Math.floor(duration % 60);
-        durationSeconds = `0${durationSeconds}`;
-        console.log(`${durationMinutes}:${durationSeconds}`)
+        if (durationSeconds < 10) {
+            durationSeconds = `0${durationSeconds}`;
+        }
+        durationEl.textContent = `${durationMinutes}:${durationSeconds}`; 
     }
 }
 
