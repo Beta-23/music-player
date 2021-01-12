@@ -100,7 +100,9 @@ function updateProgressBar(e) {
         progress.style.width = `${progressPercent}%`;
         // Calculate display for duration
         const durationMinutes = Math.floor(duration / 60);
-        console.log('minutes', durationMinutes)
+        let durationSeconds = Math.floor(duration % 60);
+        durationSeconds = `0${durationSeconds}`;
+        console.log(`${durationMinutes}:${durationSeconds}`)
     }
 }
 
