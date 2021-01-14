@@ -32,6 +32,16 @@ const songs = [
         displayName: 'Oasis',
         artist: 'Makzo',
     },
+    {
+        name: 'rhythmic-2',
+        displayName: '5 am',
+        artist: 'Ruck P, Shuko',
+    },
+    {
+        name: 'rhythmic-3',
+        displayName: 'Velocities',
+        artist: 'Sleepy Fish',
+    }
 ];
 
 // Check if Playing
