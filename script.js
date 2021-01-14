@@ -14,23 +14,23 @@ const nextBtn = document.getElementById('next');
 const songs = [
     {
         name: 'ad-1',
-        displayName: 'Chill Mach',
-        artist: 'Design 1',
+        displayName: 'Longing',
+        artist: 'Makzo',
     },
     {
         name: 'ad-2',
-        displayName: '7 (Remix)',
-        artist: 'Design 2',
+        displayName: 'Plants',
+        artist: 'Philanthrope, Ian Ewing, Sleepy Fish',
     },
     {
         name: 'ad-3',
-        displayName: 'Goodnight Queen',
-        artist: 'Design 3',
+        displayName: 'Ever Forward ',
+        artist: 'dryhope',
     },
     {
         name: 'rhythmic-1',
-        displayName: 'Jan6th2021',
-        artist: 'Day2Remember',
+        displayName: 'Oasis',
+        artist: 'Makzo',
     },
 ];
 
