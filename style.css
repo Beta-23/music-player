@@ -3,7 +3,6 @@
 
 :root {
 	--primary-color: #00ff84;
-	--secondary-color: rgb(255, 30, 79);
 	--font-color: white;
 	--progress-color: rgba(70, 70, 70, 0.5);
 }
@@ -118,9 +117,9 @@ h3 {
 }
 
 .volume-range {
-	margin-left: 15px;
+	margin-left: 10px;
 	height: 8px;
-	width: 65px;
+	width: 90px;
 	background: var(--progress-color);
 	border-radius: 10px;
 	position: relative;
