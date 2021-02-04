@@ -9,6 +9,9 @@ const durationEl = document.getElementById('duration');
 const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
+const volumeRange = document.querySelector('.volume-range');
+const volumeIcon = document.getElementById('volume-icon');
+const volumeBar = document.querySelector('.volume-bar');
 
 // Music
 const songs = [
@@ -128,6 +131,29 @@ function updateProgressBar(e) {
     }
 }
 
+// Volume Controls
+function changeVolume(e) {
+    let volume = e.offsetX / volumeRange.offsetWidth;
+    // Rounding volume up or down
+    if (volume < 0.1) {
+        volume = 0;
+    }
+    if (volume > 0.9) {
+        volume = 1;
+    }
+    volumeBar.style.width = `${volume * 100}%`;
+    music.volume = volume;
+    // Change icon depending on volume
+    volumeIcon.className = '';
+    if (volume > 0.7) {
+        volumeIcon.classList.add('fas', 'fa-volume-up');
+    } else if (volume < 0.7 && volume > 0) {
+        volumeIcon.classList.add('fas', 'fa-volume-down');
+    } else if (volume === 0) {
+        volumeIcon.classList.add('fas', 'fa-volume-off');
+    }
+}
+
 // Set Progress Bar
 function setProgressBar(e) {
     const width = this.clientWidth;
@@ -137,10 +163,12 @@ function setProgressBar(e) {
 }
 
 // Event Listeners
+volumeRange.addEventListener('click', changeVolume);
 prevBtn.addEventListener('click', prevSong);
 nextBtn.addEventListener('click', nextSong);
 music.addEventListener('ended', nextSong);
 music.addEventListener('timeupdate', updateProgressBar);
 progressContainer.addEventListener('click', setProgressBar);
+
 
 

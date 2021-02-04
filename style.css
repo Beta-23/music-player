@@ -1,5 +1,13 @@
 /* Images created by: https://unsplash.com/@pawel_czerwinski */
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+:root {
+	--primary-color: #00ff84;
+	--secondary-color: rgb(255, 30, 79);
+	--font-color: white;
+	--progress-color: rgba(70, 70, 70, 0.5);
+}
+
 html {
 	box-sizing: border-box;
 }
@@ -101,6 +109,35 @@ h3 {
 	font-size: 40px;
 	position: relative;
 	top: 3px;
+}
+
+.volume-icon {
+	position: relative;
+	cursor: pointer;
+}
+
+.volume-range {
+	height: 8px;
+	width: 100px;
+	background: var(--progress-color);
+	border-radius: 10px;
+	position: relative;
+	top: -21px;
+	left: 50px;
+	cursor: pointer;
+}
+
+.volume-bar {
+	position: relative;
+	background: var(--primary-color);
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	transition: width 0.2s ease-in;
+}
+
+.volume-bar:hover {
+	background: var(--progress-color);
 }
 
 /* Media Query: iPhone (Vertical) */
