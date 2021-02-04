@@ -112,13 +112,15 @@ h3 {
 }
 
 .volume-icon {
-	position: relative;
+	margin-left: 15px;
+	margin-top: -10px;
 	cursor: pointer;
 }
 
 .volume-range {
+	margin-left: 15px;
 	height: 8px;
-	width: 100px;
+	width: 65px;
 	background: var(--progress-color);
 	border-radius: 10px;
 	position: relative;
@@ -128,9 +130,7 @@ h3 {
 }
 
 .volume-bar {
-	position: relative;
 	background: var(--primary-color);
-	width: 100%;
 	height: 100%;
 	border-radius: 10px;
 	transition: width 0.2s ease-in;
