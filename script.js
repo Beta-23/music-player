@@ -44,6 +44,16 @@ const songs = [
         name: 'rhythmic-3',
         displayName: 'Velocities',
         artist: 'Sleepy Fish',
+    },
+    {
+        name: 'rhythmic-4',
+        displayName: 'Canary Forest',
+        artist: 'Aso, Middle School, Aviino',
+    },
+    {
+        name: 'rhythmic-5',
+        displayName: 'Sugarless',
+        artist: 'The Field Tapes, Aviino',
     }
 ];
 
