@@ -1,6 +1,6 @@
 ## Music Player
 
-JavaScript Music Player:  [e-coats](https://e-coats.herokuapp.com/)
+JavaScript Music Player:  [MUSIC-PLAYER](https://beta-23.github.io/music-player/)
 
 This project was bootstrapped with music from [Chillhop](https://chillhop.com/).
 
